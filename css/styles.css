@@ -37,11 +37,31 @@ img {
 }
 
 .container {
-    max-width: 1280px;
-    padding-right: 20px;
-    padding-left: 20px;
+    min-width: 1158px;
+    max-width: 128px;
+    padding: 0 15px;
     margin: 0 auto;
     background-color: #0E1823;
+}
+
+@media screen and (min-width:768px;) {
+    .container {
+        max-width: 768px;
+        padding: 32px;
+    }        
+
+    .tab-card {
+        display: none;
+    }
+}
+
+@media screen and (min-width:320px) {
+    .container {
+        max-width: 375px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    
 }
 
 .our-yachts {
@@ -55,8 +75,10 @@ img {
     text-align: center;
     color: #fbfbfb;
     padding-top: 150px;
-    margin-bottom: 76px;
+    margin-bottom: 76px; 
 }
+
+
 
 .picture-collection {
     display: flex;
@@ -94,6 +116,8 @@ img {
     background-color: #f0f0f0;
     /* Пример цвета фона */
 }
+
+
 
 .yacht-item {
     font-weight: 400;
